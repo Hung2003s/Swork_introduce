@@ -17,7 +17,7 @@ class BannerItems extends StatelessWidget {
             fit: BoxFit.scaleDown,
           ),
         ),
-        const SizedBox(height: 80,),
+        const SizedBox(height: 60,),
         SizedBox(
           width: 337,
           height: 122,
@@ -51,7 +51,7 @@ class BannerItems extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: 8,),
+        const SizedBox(height: 8,),
       ],
     );
   }

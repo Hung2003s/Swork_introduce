@@ -2,12 +2,11 @@ import 'package:flutter/cupertino.dart';
 
 class Indicator extends StatelessWidget {
   final bool isActive;
-
   const Indicator({super.key, required this.isActive});
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
+    return AnimatedContainer(
       width: isActive ? 32 : 8,
       height: 8,
       decoration: BoxDecoration(
@@ -20,7 +19,7 @@ class Indicator extends StatelessWidget {
         ) : null,
         color:  isActive ? null : const Color(0xffE8E8E8),
         borderRadius: BorderRadius.circular(8),
-      ),
+      ), duration: const Duration(milliseconds: 100),
     );
   }
 
